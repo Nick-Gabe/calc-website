@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#252b43">
+  <title>Calculator app</title>
+</head>
+
+<body>
+
+  <main aria-label="Calculator">
+    <div class="calc__header type1">
+      <h1>calc</h1>
+      <div class="calc__themes" data-changeTheme id="themeChanger">
+        <button></button>
+      </div>
+    </div>
+    <div class="calc__result type1" id="screen">0</div>
+    <div class="calc__buttons" id="keypad">
+      <button id="7" class="type2">7</button>
+      <button id="8" class="type2">8</button>
+      <button id="9" class="type2">9</button>
+      <button id="Backspace" class="button--text type3">del</button>
+      <button id="4" class="type2">4</button>
+      <button id="5" class="type2">5</button>
+      <button id="6" class="type2">6</button>
+      <button id="+" class="type2">+</button>
+      <button id="1" class="type2">1</button>
+      <button id="2" class="type2">2</button>
+      <button id="3" class="type2">3</button>
+      <button id="-" class="type2">-</button>
+      <button id="." class="type2">.</button>
+      <button id="0" class="type2">0</button>
+      <button id="/" class="type2">/</button>
+      <button id="*" class="type2">x</button>
+      <button id="Delete" class="button--text type3 reset">reset</button>
+      <button id="Enter" class="button--submit type4">=</button>
+    </div>
+  </main>
+
+  <aside aria-label="Credits" class="credits">
+    <img class="credits__image" src="https://avatars.githubusercontent.com/u/42651514?v=4" alt="Author's Photo"
+      width="56">
+    <div class="credits__text">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      </p>
+      <p>
+        Coded by <a href="https://www.github.com/Nick-Gabe" target="_blank">Nick Gabe</a>.
+      </p>
+    </div>
+  </aside>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
