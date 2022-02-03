@@ -1,11 +1,15 @@
-# 🧮 Calculator app
-
+# 🧮 [Calc, a simple Calculator](https://nick-gabe.github.io/calc-website/)
+![](https://img.shields.io/github/languages/count/nick-gabe/calc-website)
+![](https://img.shields.io/github/languages/top/nick-gabe/calc-website)
+![](https://img.shields.io/github/languages/code-size/nick-gabe/calc-website)
+![](https://img.shields.io/github/license/nick-gabe/calc-website)
+![](https://img.shields.io/badge/development-finalized-blue)
+> ![Thumbnail](./design/thumbnail.png)
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,15 +26,11 @@ Users should be able to:
 - See the size of the elements adjust based on their device's screen size
 - Perform mathmatical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
-- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
-
-### Screenshot
-
-![Screenshot](./design/screenshot.png)
+- **Bonus**: Have their initial theme preference checked and have any additional changes saved in the browser
 
 ### Links
 
-- Website URL: [Click here](https://nick-gabe.github.io/calculator-website/)
+- Website URL: [Click here](https://nick-gabe.github.io/calc-website/)
 
 ## My process
 
