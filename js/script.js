@@ -170,7 +170,7 @@ function pressButton(button, action) {
         }
     }
 
-    let text = doc.screen.textContent
+    let text = doc.screen.textContent.replace(/,/g,'.')
     const keyVerifier = {
         number(x) {
             let regex = /\+|\-|\*|\//
@@ -189,8 +189,11 @@ function pressButton(button, action) {
 
         },
         operation(x) {
-            if (text.match(/(\+|\-|\*|\/)./g)) {
-                doc.screen.textContent = Function(`return ${text}`)() + x
+            if (text === '0' && x === '-') {
+                doc.screen.textContent = x
+            } else if (text.match(/(\+|\-|\*|\/)./g)) {
+                let calc = Function(`return ${text}`)()
+                doc.screen.textContent = calc.toString().replace('.',',') + x
 
                 changeFontSize(doc.screen.textContent)
             } else {
@@ -211,7 +214,8 @@ function pressButton(button, action) {
         },
         enter() {
             if (text.match(/(\+|\-|\*|\/)./g)) {
-                doc.screen.textContent = Function(`return ${text}`)()
+                let calc = Function(`return ${text}`)()
+                doc.screen.textContent = calc.toString().replace('.',',')
 
                 changeFontSize(doc.screen.textContent)
             } else return
